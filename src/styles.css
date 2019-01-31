@@ -22,6 +22,33 @@
   color: #61dafb;
 }
 
+.Keyboard {
+  position: relative;
+  display: flex;
+}
+
+.BlackKey {
+  position:absolute;
+  background-color: black;
+  top:0;
+  left: 36px;
+  height: 200px;
+  width:  40px;
+  border-style: solid;
+  z-index: 2;
+
+}
+
+.WhiteKey {
+  position:relative;
+  background-color: white;
+  height: 300px;
+  width:  50px;
+  border-style: solid;
+  border-width: 5px;
+  z-index: 1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
