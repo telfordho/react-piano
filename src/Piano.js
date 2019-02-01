@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import { Keyboard } from './Keyboard/Keyboard'
-import './styles.css';
+import React, { Component } from "react";
+import { Octave } from "./Keyboard/Octave";
+import "./styles.css";
+import Grid from "@material-ui/core/Grid";
 
 class Piano extends Component {
   render() {
     return (
-      <div style={{display:'flex'}}>
-        <Keyboard/>
-        <Keyboard/>
-        <Keyboard/>
-      </div>
-
+      <Grid
+        justify='center'
+        style={{display: "flex"}}
+      >
+        <Octave />
+        <Octave />
+      </Grid>
     );
   }
 }

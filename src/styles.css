@@ -1,27 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 .Keyboard {
   position: relative;
   display: flex;
@@ -36,7 +12,7 @@
   width:  40px;
   border-style: solid;
   z-index: 2;
-
+  box-shadow: 5px 10px 5px gray
 }
 
 .WhiteKey {
@@ -47,6 +23,13 @@
   border-style: solid;
   border-width: 5px;
   z-index: 1;
+  box-shadow: 5px 10px 5px gray
+}
+
+.WhiteKey:hover, .BlackKey:hover {
+  border-color: LightGrey;
+  cursor:pointer;
+  box-shadow: none;
 }
 
 @keyframes App-logo-spin {

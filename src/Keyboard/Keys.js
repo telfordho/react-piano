@@ -5,9 +5,8 @@ export const Keys = props => (
     <div style={{position:'relative'}}>
         <div className='WhiteKey'/>
         {
-            props.BlackKey?
+            props.BlackKey &&
             <span className='BlackKey'/>
-            :null
         }
     </div>
 )
